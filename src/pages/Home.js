@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Entry from '../components/Entry'
+import Jumbotron from '../components/Jumbotron'
 
 class Home extends React.Component {
     state = {
@@ -19,6 +20,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
+            <Jumbotron />    
             <Entry data={this.state.data}/>
             </div>
         )
