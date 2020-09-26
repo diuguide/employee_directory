@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Entry from '../components/Entry'
 
 class Home extends React.Component {
     state = {
@@ -7,7 +8,7 @@ class Home extends React.Component {
         filteredData: []
     }
     componentDidMount() {
-        axios('https://randomuser.me/api/?results=120',
+        axios('https://randomuser.me/api/?results=12',
       )
             .then((res) => {
                this.setState({data: res.data.results})
@@ -18,13 +19,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-            <ul className="list-group">
-                {this.state.data.map(result => (
-                    <li className="list-group-item" key={result.id}>
-                        <h3> {result.email} </h3>
-                    </li>
-                ))}
-            </ul>
+            <Entry data={this.state.data}/>
             </div>
         )
     }
