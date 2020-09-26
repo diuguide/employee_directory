@@ -1,13 +1,34 @@
 import React from 'react';
-// import Jumbotron from './components/Jumbotron';
-// import Search from './components/Search';
-// import Sort from './components/Sort';
-// import Results from './components/Results';
+import axios from 'axios';
 
-function Home() {
-return(
-    <h1>home</h1>
-);
+class Home extends React.Component {
+    state = {
+        data: [],
+        filteredData: []
+    }
+    componentDidMount() {
+        axios('https://randomuser.me/api/?results=20',
+      )
+            .then((res) => {
+               this.setState({data: res.data.results})
+            }
+            );
+    }
+
+    render() {
+        return (
+            <div>
+                {/* <ul className="list-group">
+                    {data.map(result => {
+                        <li className="list-group-item"> {result.name} </li>
+                    })}
+
+                </ul> */}
+
+            </div>
+        )
+    }
+
 }
 
 export default Home;
