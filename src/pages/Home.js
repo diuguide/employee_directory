@@ -7,7 +7,7 @@ class Home extends React.Component {
         filteredData: []
     }
     componentDidMount() {
-        axios('https://randomuser.me/api/?results=20',
+        axios('https://randomuser.me/api/?results=120',
       )
             .then((res) => {
                this.setState({data: res.data.results})
@@ -18,13 +18,13 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                {/* <ul className="list-group">
-                    {data.map(result => {
-                        <li className="list-group-item"> {result.name} </li>
-                    })}
-
-                </ul> */}
-
+            <ul className="list-group">
+                {this.state.data.map(result => (
+                    <li className="list-group-item" key={result.id}>
+                        <h3> {result.email} </h3>
+                    </li>
+                ))}
+            </ul>
             </div>
         )
     }
