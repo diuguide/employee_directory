@@ -1,10 +1,33 @@
 import React from 'react';
 import "../styles/Entry.css";
 function Entry(props) {
+    const filterGender = props.data.filter(person => person.gender.includes("male"));
+    console.log(filterGender);
+    console.log(props.data)
+    // function filter() {
+    // let filteredName = props.data.filter(person => person.gender.includes('male')).map(filteredName => (
+    //         <li>
+                
+    //             <h1>{filteredName} Hello World </h1>
+    //         </li>
+    //     ))
+
+    // console.log(filteredName)
+        
+    // }
+    // filter();
     return (
         <div className="row">
             <div className="col">
-            <ul className="list-group">
+                <div><h1> hellow world</h1>
+                    {filterGender.map(filteredName => (
+                        <li>
+                            
+                            <h1>{filteredName} Hello World </h1>
+                        </li>
+                    ))}
+                </div>
+                {/* <ul className="list-group">
                 {props.data.map(result => (
                     <li className="list-group-item" key={result.id}>
                         <img alt={result.gender} className="img-fluid" src={result.picture.large} ></img>
@@ -14,10 +37,12 @@ function Entry(props) {
                         <h3> {result.phone} </h3>
                     </li>
                 ))}
-            </ul>
+            </ul> */}
             </div>
         </div>
     )
-}   
+
+
+}
 
 export default Entry;

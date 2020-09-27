@@ -9,7 +9,8 @@ function Jumbotron(props) {
                     Sort By
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button">Gender</button>
+                    <button class="dropdown-item" type="button">Filter Men</button>
+                    <button class="dropdown-item" type="button">Filter Women</button>
                     <button class="dropdown-item" type="button">DOB Ascending</button>
                     <button class="dropdown-item" type="button">DOB Descending</button>
                 </div>
