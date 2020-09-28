@@ -20,7 +20,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-            <Jumbotron />    
+            <Jumbotron data={this.state.data}/>    
             <Entry data={this.state.data}/>
             </div>
         )
