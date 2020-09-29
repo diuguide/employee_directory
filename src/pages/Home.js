@@ -10,18 +10,31 @@ class Home extends React.Component {
     }
     componentDidMount() {
         axios('https://randomuser.me/api/?results=12',
-      )
+        )
             .then((res) => {
-               this.setState({data: res.data.results})
+                console.log("Success Component Did Mount: " + res.data.results) 
+                this.setState({ data: res.data.results })
             }
             );
     }
 
+    function filterMen() {
+        const filteredMen = this.state.data.filter(person => person.gender === ("male"));
+        console.log(filteredMen);
+        return filteredMen;
+    }
+    filterMen()
+    filterWomen() {
+        const filteredWomen = this.state.data.filter(person => person.gender === ("female"));
+        console.log(filteredWomen);
+        return filteredWomen;
+    }
     render() {
+
         return (
             <div>
-            <Jumbotron data={this.state.data}/>    
-            <Entry data={this.state.data}/>
+                <Jumbotron />
+                <Entry data={this.state.data} filteredData={this.state.filteredData} />
             </div>
         )
     }

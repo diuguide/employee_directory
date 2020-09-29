@@ -2,20 +2,21 @@ import React from 'react';
 import "../styles/Entry.css";
 function Entry(props) {
     const filterGender = props.data;
-    function filterMen() {
-        const filteredMen = props.data.filter(person => person.gender === ("male"));
-        console.log(filteredMen);
-        return filteredMen
-    }
-    function filterWomen() {
-        const filteredWomen = props.data.filter(person => person.gender === ("female"));
-        console.log(filteredWomen);
-        return filteredWomen
+    // function filterMen() {
+    //     const filteredMen = props.data.filter(person => person.gender === ("male"));
+    //     console.log(filteredMen);
+    //     return filteredMen
+    // }
+    // function filterWomen() {
+    //     const filteredWomen = props.data.filter(person => person.gender === ("female"));
+    //     console.log(filteredWomen);
+    //     return filteredWomen
 
-    }
+    // }
+    
     return (
         <div className="row">
-            <div class="col">
+            <div className="col">
                 <div className="row">
                     <div className="col mb-4">
                         <div className="dropdown">
