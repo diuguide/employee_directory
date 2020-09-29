@@ -2,6 +2,7 @@ import React from 'react';
 import "../styles/Entry.css";
 function Entry(props) {
     const filterGender = props.data;
+
     // function filterMen() {
     //     const filteredMen = props.data.filter(person => person.gender === ("male"));
     //     console.log(filteredMen);
@@ -13,6 +14,8 @@ function Entry(props) {
     //     return filteredWomen
 
     // }
+
+    
     
     return (
         <div className="row">
@@ -24,8 +27,8 @@ function Entry(props) {
                                 Sort By
                     </button>
                             <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <button className="dropdown-item" type="button" onClick={filterMen}>Filter Men</button>
-                                <button className="dropdown-item" type="button" onClick={filterWomen}>Filter Women</button>
+                                <button className="dropdown-item" type="button" onClick={() => { props.filterMen() }}>Filter Men</button>
+                                <button className="dropdown-item" type="button" onClick={() => { props.filterWomen() }}>Filter Women</button>
                                 <button className="dropdown-item" type="button">DOB Ascending</button>
                                 <button className="dropdown-item" type="button">DOB Descending</button>
                             </div>

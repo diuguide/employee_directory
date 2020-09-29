@@ -18,23 +18,26 @@ class Home extends React.Component {
             );
     }
 
-    function filterMen() {
-        const filteredMen = this.state.data.filter(person => person.gender === ("male"));
-        console.log(filteredMen);
-        return filteredMen;
+    filterMen = () => {
+        const filteredMen = this.state.data.filter(person => person.gender === ("male"))
+        console.log(filteredMen)
+        this.setState({ data: filteredMen}) 
     }
-    filterMen()
-    filterWomen() {
-        const filteredWomen = this.state.data.filter(person => person.gender === ("female"));
-        console.log(filteredWomen);
-        return filteredWomen;
+    filterWomen = () => {
+        const filteredWomen = this.state.data.filter(person => person.gender === ("female"))
+        // console.log(filteredWomen)
+        this.setState({ data: filteredWomen }) 
     }
     render() {
 
         return (
             <div>
                 <Jumbotron />
-                <Entry data={this.state.data} filteredData={this.state.filteredData} />
+                <Entry 
+                 data={this.state.data}
+                 filterMen={this.filterMen}
+                 filterWomen={this.filterWomen}
+                  />
             </div>
         )
     }
