@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/employee_directory/static/css/main.a3855411.chunk.css",
-    "main.js": "/employee_directory/static/js/main.f9ca0aaa.chunk.js",
-    "main.js.map": "/employee_directory/static/js/main.f9ca0aaa.chunk.js.map",
-    "runtime-main.js": "/employee_directory/static/js/runtime-main.26e25b43.js",
-    "runtime-main.js.map": "/employee_directory/static/js/runtime-main.26e25b43.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/employee_directory/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.c34304bd.chunk.js": "/employee_directory/static/js/2.c34304bd.chunk.js",
-    "static/js/2.c34304bd.chunk.js.map": "/employee_directory/static/js/2.c34304bd.chunk.js.map",
-    "index.html": "/employee_directory/index.html",
-    "precache-manifest.fac3ed6e88cd5ce0aa37c6110e6f2fdd.js": "/employee_directory/precache-manifest.fac3ed6e88cd5ce0aa37c6110e6f2fdd.js",
-    "service-worker.js": "/employee_directory/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/employee_directory/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.a3855411.chunk.css.map": "/employee_directory/static/css/main.a3855411.chunk.css.map",
-    "static/js/2.c34304bd.chunk.js.LICENSE.txt": "/employee_directory/static/js/2.c34304bd.chunk.js.LICENSE.txt"
+    "main.css": "https://diuguide.github.io/employee_directory/static/css/main.a3855411.chunk.css",
+    "main.js": "https://diuguide.github.io/employee_directory/static/js/main.d5be26af.chunk.js",
+    "main.js.map": "https://diuguide.github.io/employee_directory/static/js/main.d5be26af.chunk.js.map",
+    "runtime-main.js": "https://diuguide.github.io/employee_directory/static/js/runtime-main.1a96efc7.js",
+    "runtime-main.js.map": "https://diuguide.github.io/employee_directory/static/js/runtime-main.1a96efc7.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "https://diuguide.github.io/employee_directory/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.47c58096.chunk.js": "https://diuguide.github.io/employee_directory/static/js/2.47c58096.chunk.js",
+    "static/js/2.47c58096.chunk.js.map": "https://diuguide.github.io/employee_directory/static/js/2.47c58096.chunk.js.map",
+    "index.html": "https://diuguide.github.io/employee_directory/index.html",
+    "precache-manifest.af3c99f4cba1de0d9754b2dbb8475a18.js": "https://diuguide.github.io/employee_directory/precache-manifest.af3c99f4cba1de0d9754b2dbb8475a18.js",
+    "service-worker.js": "https://diuguide.github.io/employee_directory/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "https://diuguide.github.io/employee_directory/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.a3855411.chunk.css.map": "https://diuguide.github.io/employee_directory/static/css/main.a3855411.chunk.css.map",
+    "static/js/2.47c58096.chunk.js.LICENSE.txt": "https://diuguide.github.io/employee_directory/static/js/2.47c58096.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.26e25b43.js",
+    "static/js/runtime-main.1a96efc7.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.c34304bd.chunk.js",
+    "static/js/2.47c58096.chunk.js",
     "static/css/main.a3855411.chunk.css",
-    "static/js/main.f9ca0aaa.chunk.js"
+    "static/js/main.d5be26af.chunk.js"
   ]
 }
