@@ -1,22 +1,6 @@
 import React from 'react';
 import "../styles/Entry.css";
-function Entry(props) {
-    const filterGender = props.data;
-
-    // function filterMen() {
-    //     const filteredMen = props.data.filter(person => person.gender === ("male"));
-    //     console.log(filteredMen);
-    //     return filteredMen
-    // }
-    // function filterWomen() {
-    //     const filteredWomen = props.data.filter(person => person.gender === ("female"));
-    //     console.log(filteredWomen);
-    //     return filteredWomen
-
-    // }
-
-    
-    
+function Entry(props) {    
     return (
         <div className="row">
             <div className="col">
@@ -37,12 +21,24 @@ function Entry(props) {
                 </div>
                 <div className="row">
                     <div className="col">
-                        {filterGender.map((male) =>
-                            <li key={male.cell}>
-                                <img alt="profile" src={male.picture.large}></img>
-                                <h3> {male.name.first} {male.name.last} {male.gender} #: {male.phone} </h3>
-                            </li>
-                        )}
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>First</th>
+                                <th>Last</th>
+                                <th>Gender</th>
+                                <th>Phone Number</th>
+                            </tr>
+                            {props.data.map((entry) =>
+                            <tr key={entry.cell}>
+                                <td><img alt="profile" src={entry.picture.large}/></td>
+                                <td>{entry.name.first}</td>
+                                <td>{entry.name.last}</td>
+                                <td>{entry.gender}</td>
+                                <td>#{entry.phone}</td>
+                            </tr>
+                            )}
+                        </table>
                     </div>
                 </div>
             </div>

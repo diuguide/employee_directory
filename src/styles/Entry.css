@@ -4,3 +4,11 @@ img {
 h3 {
     display: inline;
 }
+th {
+    text-align: center;
+}
+td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
