@@ -6,7 +6,6 @@ import Jumbotron from '../components/Jumbotron'
 class Home extends React.Component {
     state = {
         data: [],
-        filteredData: []
     }
     componentDidMount() {
         axios('https://randomuser.me/api/?results=12',
@@ -28,6 +27,9 @@ class Home extends React.Component {
         // console.log(filteredWomen)
         this.setState({ data: filteredWomen }) 
     }
+    // filterDobAsc = () => {
+    //     console.log(this.data.)
+    // }
     render() {
 
         return (
