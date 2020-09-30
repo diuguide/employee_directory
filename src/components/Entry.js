@@ -10,7 +10,7 @@ function Entry(props) {
                             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Sort By
                     </button>
-                            <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <div className="dropdown-menu shadow" aria-labelledby="dropdownMenu2">
                                 <button className="dropdown-item" type="button" onClick={() => { props.filterMen() }}>Filter Men</button>
                                 <button className="dropdown-item" type="button" onClick={() => { props.filterWomen() }}>Filter Women</button>
                                 <button className="dropdown-item" type="button">DOB Ascending</button>
@@ -21,9 +21,9 @@ function Entry(props) {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <table>
+                        <table className="shadow">
                             <tr>
-                                <th></th>
+                                <th>Photo</th>
                                 <th>First</th>
                                 <th>Last</th>
                                 <th>Gender</th>
