@@ -22,8 +22,8 @@ function Jumbotron(props) {
                             Sort By
                             </button>
                         <div className="dropdown-menu shadow" aria-labelledby="dropdownMenu2">
-                            <button className="dropdown-item" type="button" onClick={() => { props.filterDobAsc() }}>DOB Ascending</button>
-                            <button className="dropdown-item" type="button" onClick={() => { props.filterDobDsc() }}>DOB Descending</button>
+                            <button className="dropdown-item" type="button" onClick={() => { props.filterDobAsc() }}>Age Ascending</button>
+                            <button className="dropdown-item" type="button" onClick={() => { props.filterDobDsc() }}>Age Descending</button>
                         </div>
                     </div>
                 </div>

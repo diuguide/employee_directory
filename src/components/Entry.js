@@ -15,6 +15,7 @@ function Entry(props) {
                                 <th>Last</th>
                                 <th>Gender</th>
                                 <th>Phone Number</th>
+                                <th>Age</th>
                             </tr>
                             {props.data.map((entry) =>
                                 <tr key={entry.cell}>
