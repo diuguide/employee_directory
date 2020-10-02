@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import Entry from '../components/Entry'
 import Jumbotron from '../components/Jumbotron'
-import moment from 'moment';
 
 class Home extends React.Component {
     state = {
@@ -25,7 +24,7 @@ class Home extends React.Component {
     }
     filterWomen = () => {
         const filteredWomen = this.state.originalData.filter(person => person.gender === ("female"))
-        // console.log(filteredWomen)
+        
         this.setState({ data: filteredWomen }) 
     }
     filterDobAsc = () => {
